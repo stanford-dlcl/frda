@@ -1,0 +1,55 @@
+
+/* specific styles and over-rides */
+
+body {
+  --content-width: 1000px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+main {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+main > article,
+header > div,
+.wrapped {
+  margin: 0 auto;
+  max-width: 90vw;
+  padding: 10px 0;
+  width: var(--content-width);
+}
+
+main > article {
+  padding: 2em 0 4em;
+}
+
+header > div {
+  align-items: flex-end;
+  display: flex;
+  height: 100px;
+  margin: 0 auto;
+  max-width: 90vw;
+  padding: 10px 0;
+  width: var(--content-width);
+}
+
+header span {
+  font-size: 2em;
+  line-height: 1;
+  margin: 0 10px;
+}
+
+header {
+  background-color: var(--cardinal);
+  color: white;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: var(--cardinal);
+  color: var(--text-on-cardinal);
+}

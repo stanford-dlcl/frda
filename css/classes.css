@@ -1,0 +1,34 @@
+.toclink {
+  color: inherit;
+}
+
+.headerlink {
+  margin-left: 4px;
+  visibility: hidden;
+}
+
+.instruction {
+  background-color: var(--instruction-background);
+  padding: .5em 1em;
+  border-radius: .5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  border: 1px solid var(--instruction-border);
+  clear: both;
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.pull-right {
+  float: right;
+  margin: 0 0 1em 2em;
+}
+
+.pull-left {
+  float: left;
+  margin: 0 2em 1em 0;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
