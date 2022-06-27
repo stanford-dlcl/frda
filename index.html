@@ -20,40 +20,13 @@
       <div>
        
           <img src="librarybnf.png"            alt="Stanford Library & BNF logos">
-        <span>Workshop Series</span>
+
       </div>
     </header>
 
-    <input type="checkbox" id="dark-mode">
-    <label id="dark-mode-toggle" for="dark-mode">
-      <span class="toggle-border">
-        <span class="toggle-indicator">&nbsp;</span>
-      </span>
-    </label>
-    <form id="sidebar">
-      <input type="checkbox" id="open-sidebar">
-      <label for="open-sidebar">
-        <span class="spinner diagonal part-1">&nbsp;</span>
-        <span class="spinner horizontal">&nbsp;</span>
-        <span class="spinner diagonal part-2">&nbsp;</span>
-      </label>
-      <div id="sidebar-content">${toc}</div>
-    </form>
-    <main><article><%block filter="typogrify">${content}</%block></article></main>
-    <footer>
-      <p class="wrapped">
-        This workshop is part of the CIDR Workshop Series.<br>
-        See upcoming workshops at https://cidr.stanford.edu/workshops/
-      </p>
-    </footer>
+    
 
-    <script>
-      window.addEventListener("keydown", ({key}) => {
-        if (key == "Escape") {
-          document.getElementById("open-sidebar").checked = false;
-        }
-      })
-    </script>
+    
     
     <h2 class="lead"><a href="http://sul-philologic.stanford.edu/philologic/archparl/">Archives parlementaires / Parliamentary archives</a></h2>
 <p><img alt="" src="images/ap.jpg" style="width: 130px; height: 130px; float: left; padding-right:10px; clear:both;" />The <a href="http://sul-philologic.stanford.edu/philologic/archparl/"><em>Archives parlementaires</em></a> is a chronologically-ordered edited collection of sources on the French Revolution. It was conceived in the mid 19th century as a project to produce a definitive record of parliamentary deliberations and also includes letters, reports, speeches, and other first-hand accounts from a great variety of published and archival sources. FRDA currently contains the AP volumes covering the years 1787-1794, which can be searched using ARTFL's PhiloLogic 4 open source software platform. The texts have been marked up using TEI so that speakers, places, dates, and terms in the published index can be easily found. Users can see both scanned images of the AP pages or just the texts.</p>
