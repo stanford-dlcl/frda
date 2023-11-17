@@ -1,48 +1,575 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<html><head prefix="dcterms: http://purl.org/dc/terms/#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>
-      French Revolution Digital Archive
-    </title>
-    <meta name="dcterms.modified" content="2021-06-30">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="css2" rel="stylesheet">
-    <style>
-      html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}ul[class],ol[class]{padding:0}body,h1,h2,h3,h4,p,ul[class],ol[class],figure,blockquote,dl,dd{margin:0}body{min-height:100vh;scroll-behavior:smooth;text-rendering:optimizeSpeed;line-height:1.5}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}article>*+*{margin-top:1em}input,button,textarea,select{font:inherit}:root{--cardinal:#8c1515;--dark-red:#820000;--process-black:#2e2d29;--text-on-cardinal:#e3dfd5;--sandstone:#d2c295;--sandstone-paler:#e3dbc5;--sandstone-semi-trsp:rgba(210,194,149,.6);--90-grey:#43423E;--digital-blue:#006CB8;--digital-blue-light:#6FC3FF}form,main{--background-color:#f6f6f6;--text-color:var(--process-black);--link-color:var(--dark-red);--selection-background:var(--sandstone-semi-trsp);--code-color:var(--text-color);--sidebar-background:var(--sandstone-paler);--sidebar-toggle-color:var(--cardinal);--sidebar-section-bullet-color:var(--dark-red);--instruction-border:var(--sandstone);--instruction-background:var(--sandstone-paler)}input#dark-mode:checked ~ main,input#dark-mode:checked ~ form{--background-color:var(--process-black);--text-color:var(--text-on-cardinal);--link-color:var(--digital-blue-light);--selection-background:var(--sandstone-semi-trsp);--code-color:var(--process-black);--sidebar-background:var(--90-grey);--sidebar-toggle-color:var(--digital-blue);--sidebar-section-bullet-color:var(--digital-blue-light);--instruction-border:var(--sandstone);--instruction-background:var(--90-grey)}img.dm-invert{transition:filter 0.3s ease-in-out}input#dark-mode:checked ~ main img.dm-invert{filter:invert(1)}::selection,a::selection{background:var(--selection-background)}a,a::selection{color:var(--link-color);text-decoration:none;transition:color 0.3s ease-in-out}a:hover{color:var(--text-color);text-decoration:underline}hr{margin:4em 0}p{margin:1em 0}blockquote{color:#666;margin:0;padding-left:3em;border-left:.5em #EEE solid}code{color:var(--code-color);margin:0 2px;padding:4px 5px 0;white-space:nowrap;border:1px solid #eaeaea;background-color:white;border-radius:8px;font-family:'Source Sans Mono',monospace;font-size:.9em;user-select:all}h1,h2,h3,h4,h5,h6{font-family:'Source Serif Pro',serif;font-weight:400;line-height:1em;padding-left:1em;text-indent:-1em}h1{font-size:2.5em}h2{font-size:2em}h3{font-size:1.5em}h4{font-size:1.2em}h5{font-size:1em}h6{font-size:.9em}h1[id],h2[id],h3[id]{padding-top:1em}article>ul>* + *{margin-top:.8em}h1:hover .headerlink,h2:hover .headerlink,h3:hover .headerlink,h4:hover .headerlink,h5:hover .headerlink,h6:hover .headerlink{visibility:visible}table{width:100%}img{margin-top:1em}.toclink{color:inherit}.headerlink{margin-left:4px;visibility:hidden}.instruction{background-color:var(--instruction-background);padding:.5em 1em;border-radius:.5em;margin-left:1.5em;margin-right:1.5em;border:1px solid var(--instruction-border);clear:both;transition:border-color 0.3s ease-in-out,background-color 0.3s ease-in-out}.pull-right{float:right;margin:0 0 1em 2em}.pull-left{float:left;margin:0 2em 1em 0}.center{margin-left:auto;margin-right:auto}input#dark-mode{display:none}#dark-mode-toggle{position:sticky;float:right;padding:20px;top:0}#dark-mode-toggle .toggle-border{border:1px solid var(--process-black);width:50px;height:22px;display:block;border-radius:20px;position:relative}#dark-mode-toggle .toggle-indicator{width:16px;height:16px;border-radius:50%;position:absolute;background-color:var(--process-black);top:2px;left:2px;transition:all 0.3s ease-in-out;overflow:hidden;box-sizing:border-box}#dark-mode-toggle .toggle-indicator::after{content:"";width:14px;height:14px;border-radius:50%;position:absolute;bottom:-3px;right:5px;background-color:var(--process-black)}input#dark-mode:checked ~ #dark-mode-toggle .toggle-border{border-color:white}input#dark-mode:checked ~ #dark-mode-toggle .toggle-indicator{background-color:var(--text-on-cardinal);left:calc(50px - 22px);transform:rotate(180deg)}form#sidebar{--sidebar-width:400px;position:sticky;top:0;left:0}input#open-sidebar:checked ~ #sidebar-content{box-shadow:8px 0 8px rgb(0 0 0 / 50%);transform:translateX(0)}input#open-sidebar{display:none}label[for="open-sidebar"]{transition:all 0.3s;cursor:pointer;position:absolute;top:15px;left:15px;z-index:99;height:22px;width:22px}.spinner{transition:all 0.3s;position:absolute;height:3px;width:100%;background-color:var(--sidebar-toggle-color);user-select:none}.horizontal{transition:all 0.3s;position:relative;float:left;margin-top:3px}.diagonal.part-1{position:relative;transition:all 0.3s;float:left}.diagonal.part-2{transition:all 0.3s;position:relative;float:left;margin-top:3px}input#open-sidebar:checked ~ label[for="open-sidebar"]>.horizontal{transition:all 0.3s;box-sizing:border-box;opacity:0}input#open-sidebar:checked ~ label[for="open-sidebar"]>.diagonal.part-1{transition:all 0.3s;box-sizing:border-box;transform:rotate(135deg);margin-top:8px}input#open-sidebar:checked ~ label[for="open-sidebar"]>.diagonal.part-2{transition:all 0.3s;box-sizing:border-box;transform:rotate(-135deg);margin-top:-9px}#sidebar-content{height:100vh;position:absolute;top:0;left:0;width:var(--sidebar-width);transform:translateX(calc(-1 * var(--sidebar-width)));transition:transform 250ms ease-in-out,background-color 0.3s ease-in-out;background-color:var(--sidebar-background);padding-top:48px}.toc{height:calc(100vh - 48px);overflow-y:auto;padding-bottom:24px}.toc ul{margin:0;padding:0 0 0 0.5em}.toc li{list-style:none;cursor:pointer;padding-left:1em;text-indent:-1em;font-size:.9em;margin:.5em 0}.toc li::before{content:"§";color:var(--sidebar-section-bullet-color);font-size:1.2em;line-height:1em;transition:color 0.3s ease-in-out}.toc li a{color:var(--text-color);display:inline-block;padding-left:1em;text-indent:-1em;transition:color 0.3s ease-in-out;vertical-align:top;max-width:90%}.toc>ul{padding:0}.toc>ul>li{list-style:none;padding:0 0 0 .5em;text-indent:0;font-size:1.1em;margin-top:2em}.toc>ul>li::before{display:none}.toc>ul>li>a{margin:0;font-weight:400;font-family:'Source Serif Pro',serif}body{--content-width:1000px;font-family:'Source Sans Pro',sans-serif;font-size:22px;font-weight:300}main{background-color:var(--background-color);color:var(--text-color);transition:color 0.3s ease-in-out,background-color 0.3s ease-in-out}main>article,header>div,.wrapped{margin:0 auto;max-width:90vw;padding:10px 0;width:var(--content-width)}main>article{padding:2em 0 4em}header>div{align-items:flex-end;display:flex;height:100px;margin:0 auto;max-width:90vw;padding:10px 0;width:var(--content-width)}header span{font-size:2em;line-height:1;margin:0 10px}header{background-color:var(--cardinal);color:white;padding-bottom:10px}footer{background-color:var(--cardinal);color:var(--text-on-cardinal)}
-    </style>
-  <style data-emotion="css"></style></head>
+  <html>
+    <head prefix="dcterms: http://purl.org/dc/terms/#">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-  <body>
-    <header>
-      <div>
-       
-          <img src="librarybnf.png"            alt="Stanford Library & BNF logos">
-<span>French Revolution Digital Archive</span>
-      </div>
-    </header>
+      <title>French Revolution Digital Archive</title>
+      <meta name="dcterms.modified" content="2021-06-30" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com/" />
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+      <link href="css2" rel="stylesheet" />
+      <style>
+        html {
+          box-sizing: border-box;
+        }
+        *,
+        *::before,
+        *::after {
+          box-sizing: inherit;
+        }
+        ul[class],
+        ol[class] {
+          padding: 0;
+        }
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul[class],
+        ol[class],
+        figure,
+        blockquote,
+        dl,
+        dd {
+          margin: 0;
+        }
+        body {
+          min-height: 100vh;
+          scroll-behavior: smooth;
+          text-rendering: optimizeSpeed;
+          line-height: 1.5;
+        }
+        ul[class],
+        ol[class] {
+          list-style: none;
+        }
+        a:not([class]) {
+          text-decoration-skip-ink: auto;
+        }
+        img {
+          max-width: 100%;
+          display: block;
+        }
+        article > * + * {
+          margin-top: 1em;
+        }
+        input,
+        button,
+        textarea,
+        select {
+          font: inherit;
+        }
+        :root {
+          --cardinal: #8c1515;
+          --dark-red: #820000;
+          --process-black: #2e2d29;
+          --text-on-cardinal: #e3dfd5;
+          --sandstone: #d2c295;
+          --sandstone-paler: #e3dbc5;
+          --sandstone-semi-trsp: rgba(210, 194, 149, 0.6);
+          --90-grey: #43423e;
+          --digital-blue: #006cb8;
+          --digital-blue-light: #6fc3ff;
+        }
+        form,
+        main {
+          --background-color: #f6f6f6;
+          --text-color: var(--process-black);
+          --link-color: var(--dark-red);
+          --selection-background: var(--sandstone-semi-trsp);
+          --code-color: var(--text-color);
+          --sidebar-background: var(--sandstone-paler);
+          --sidebar-toggle-color: var(--cardinal);
+          --sidebar-section-bullet-color: var(--dark-red);
+          --instruction-border: var(--sandstone);
+          --instruction-background: var(--sandstone-paler);
+        }
+        input#dark-mode:checked ~ main,
+        input#dark-mode:checked ~ form {
+          --background-color: var(--process-black);
+          --text-color: var(--text-on-cardinal);
+          --link-color: var(--digital-blue-light);
+          --selection-background: var(--sandstone-semi-trsp);
+          --code-color: var(--process-black);
+          --sidebar-background: var(--90-grey);
+          --sidebar-toggle-color: var(--digital-blue);
+          --sidebar-section-bullet-color: var(--digital-blue-light);
+          --instruction-border: var(--sandstone);
+          --instruction-background: var(--90-grey);
+        }
+        img.dm-invert {
+          transition: filter 0.3s ease-in-out;
+        }
+        input#dark-mode:checked ~ main img.dm-invert {
+          filter: invert(1);
+        }
+        ::selection,
+        a::selection {
+          background: var(--selection-background);
+        }
+        a,
+        a::selection {
+          color: var(--link-color);
+          text-decoration: none;
+          transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+          color: var(--text-color);
+          text-decoration: underline;
+        }
+        hr {
+          margin: 4em 0;
+        }
+        p {
+          margin: 1em 0;
+        }
+        blockquote {
+          color: #666;
+          margin: 0;
+          padding-left: 3em;
+          border-left: 0.5em #eee solid;
+        }
+        code {
+          color: var(--code-color);
+          margin: 0 2px;
+          padding: 4px 5px 0;
+          white-space: nowrap;
+          border: 1px solid #eaeaea;
+          background-color: white;
+          border-radius: 8px;
+          font-family: "Source Sans Mono", monospace;
+          font-size: 0.9em;
+          user-select: all;
+        }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: "Source Serif Pro", serif;
+          font-weight: 400;
+          line-height: 1em;
+          padding-left: 1em;
+          text-indent: -1em;
+        }
+        h1 {
+          font-size: 2.5em;
+        }
+        h2 {
+          font-size: 2em;
+        }
+        h3 {
+          font-size: 1.5em;
+        }
+        h4 {
+          font-size: 1.2em;
+        }
+        h5 {
+          font-size: 1em;
+        }
+        h6 {
+          font-size: 0.9em;
+        }
+        h1[id],
+        h2[id],
+        h3[id] {
+          padding-top: 1em;
+        }
+        article > ul > * + * {
+          margin-top: 0.8em;
+        }
+        h1:hover .headerlink,
+        h2:hover .headerlink,
+        h3:hover .headerlink,
+        h4:hover .headerlink,
+        h5:hover .headerlink,
+        h6:hover .headerlink {
+          visibility: visible;
+        }
+        table {
+          width: 100%;
+        }
+        img {
+          margin-top: 1em;
+        }
+        .toclink {
+          color: inherit;
+        }
+        .headerlink {
+          margin-left: 4px;
+          visibility: hidden;
+        }
+        .instruction {
+          background-color: var(--instruction-background);
+          padding: 0.5em 1em;
+          border-radius: 0.5em;
+          margin-left: 1.5em;
+          margin-right: 1.5em;
+          border: 1px solid var(--instruction-border);
+          clear: both;
+          transition: border-color 0.3s ease-in-out,
+            background-color 0.3s ease-in-out;
+        }
+        .pull-right {
+          float: right;
+          margin: 0 0 1em 2em;
+        }
+        .pull-left {
+          float: left;
+          margin: 0 2em 1em 0;
+        }
+        .center {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        input#dark-mode {
+          display: none;
+        }
+        #dark-mode-toggle {
+          position: sticky;
+          float: right;
+          padding: 20px;
+          top: 0;
+        }
+        #dark-mode-toggle .toggle-border {
+          border: 1px solid var(--process-black);
+          width: 50px;
+          height: 22px;
+          display: block;
+          border-radius: 20px;
+          position: relative;
+        }
+        #dark-mode-toggle .toggle-indicator {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: var(--process-black);
+          top: 2px;
+          left: 2px;
+          transition: all 0.3s ease-in-out;
+          overflow: hidden;
+          box-sizing: border-box;
+        }
+        #dark-mode-toggle .toggle-indicator::after {
+          content: "";
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -3px;
+          right: 5px;
+          background-color: var(--process-black);
+        }
+        input#dark-mode:checked ~ #dark-mode-toggle .toggle-border {
+          border-color: white;
+        }
+        input#dark-mode:checked ~ #dark-mode-toggle .toggle-indicator {
+          background-color: var(--text-on-cardinal);
+          left: calc(50px - 22px);
+          transform: rotate(180deg);
+        }
+        form#sidebar {
+          --sidebar-width: 400px;
+          position: sticky;
+          top: 0;
+          left: 0;
+        }
+        input#open-sidebar:checked ~ #sidebar-content {
+          box-shadow: 8px 0 8px rgb(0 0 0 / 50%);
+          transform: translateX(0);
+        }
+        input#open-sidebar {
+          display: none;
+        }
+        label[for="open-sidebar"] {
+          transition: all 0.3s;
+          cursor: pointer;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          z-index: 99;
+          height: 22px;
+          width: 22px;
+        }
+        .spinner {
+          transition: all 0.3s;
+          position: absolute;
+          height: 3px;
+          width: 100%;
+          background-color: var(--sidebar-toggle-color);
+          user-select: none;
+        }
+        .horizontal {
+          transition: all 0.3s;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+        }
+        .diagonal.part-1 {
+          position: relative;
+          transition: all 0.3s;
+          float: left;
+        }
+        .diagonal.part-2 {
+          transition: all 0.3s;
+          position: relative;
+          float: left;
+          margin-top: 3px;
+        }
+        input#open-sidebar:checked ~ label[for="open-sidebar"] > .horizontal {
+          transition: all 0.3s;
+          box-sizing: border-box;
+          opacity: 0;
+        }
+        input#open-sidebar:checked
+          ~ label[for="open-sidebar"]
+          > .diagonal.part-1 {
+          transition: all 0.3s;
+          box-sizing: border-box;
+          transform: rotate(135deg);
+          margin-top: 8px;
+        }
+        input#open-sidebar:checked
+          ~ label[for="open-sidebar"]
+          > .diagonal.part-2 {
+          transition: all 0.3s;
+          box-sizing: border-box;
+          transform: rotate(-135deg);
+          margin-top: -9px;
+        }
+        #sidebar-content {
+          height: 100vh;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: var(--sidebar-width);
+          transform: translateX(calc(-1 * var(--sidebar-width)));
+          transition: transform 250ms ease-in-out,
+            background-color 0.3s ease-in-out;
+          background-color: var(--sidebar-background);
+          padding-top: 48px;
+        }
+        .toc {
+          height: calc(100vh - 48px);
+          overflow-y: auto;
+          padding-bottom: 24px;
+        }
+        .toc ul {
+          margin: 0;
+          padding: 0 0 0 0.5em;
+        }
+        .toc li {
+          list-style: none;
+          cursor: pointer;
+          padding-left: 1em;
+          text-indent: -1em;
+          font-size: 0.9em;
+          margin: 0.5em 0;
+        }
+        .toc li::before {
+          content: "§";
+          color: var(--sidebar-section-bullet-color);
+          font-size: 1.2em;
+          line-height: 1em;
+          transition: color 0.3s ease-in-out;
+        }
+        .toc li a {
+          color: var(--text-color);
+          display: inline-block;
+          padding-left: 1em;
+          text-indent: -1em;
+          transition: color 0.3s ease-in-out;
+          vertical-align: top;
+          max-width: 90%;
+        }
+        .toc > ul {
+          padding: 0;
+        }
+        .toc > ul > li {
+          list-style: none;
+          padding: 0 0 0 0.5em;
+          text-indent: 0;
+          font-size: 1.1em;
+          margin-top: 2em;
+        }
+        .toc > ul > li::before {
+          display: none;
+        }
+        .toc > ul > li > a {
+          margin: 0;
+          font-weight: 400;
+          font-family: "Source Serif Pro", serif;
+        }
+        body {
+          --content-width: 1000px;
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 22px;
+          font-weight: 300;
+        }
+        main {
+          background-color: var(--background-color);
+          color: var(--text-color);
+          transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        }
+        main > article,
+        header > div,
+        .wrapped {
+          margin: 0 auto;
+          max-width: 90vw;
+          padding: 10px 0;
+          width: var(--content-width);
+        }
+        main > article {
+          padding: 2em 0 4em;
+        }
+        header > div {
+          align-items: flex-end;
+          display: flex;
+          height: 100px;
+          margin: 0 auto;
+          max-width: 90vw;
+          padding: 10px 0;
+          width: var(--content-width);
+        }
+        header span {
+          font-size: 2em;
+          line-height: 1;
+          margin: 0 10px;
+        }
+        header {
+          background-color: var(--cardinal);
+          color: white;
+          padding-bottom: 10px;
+        }
+        footer {
+          background-color: var(--cardinal);
+          color: var(--text-on-cardinal);
+        }
+      </style>
+      <style data-emotion="css"></style>
+    </head>
 
-    
-<main>
-      <article>
-    
-    
-    <h2 class="lead"><a href="http://sul-philologic.stanford.edu/philologic/archparl/">Archives parlementaires / Parliamentary archives</a></h2>
-<p><img alt="" src="images/ap.jpg" style="width: 130px; height: 130px; float: left; padding-right:10px; clear:both;" />The <a href="http://sul-philologic.stanford.edu/philologic/archparl/"><em>Archives parlementaires</em></a> is a chronologically-ordered edited collection of sources on the French Revolution. It was conceived in the mid 19th century as a project to produce a definitive record of parliamentary deliberations and also includes letters, reports, speeches, and other first-hand accounts from a great variety of published and archival sources. FRDA currently contains the AP volumes covering the years 1787-1794, which can be searched using ARTFL's PhiloLogic 4 open source software platform. The texts have been marked up using TEI so that speakers, places, dates, and terms in the published index can be easily found. Users can see both scanned images of the AP pages or just the texts.</p>
-<br />
-<h2><a href="https://exhibits.stanford.edu/frenchrevolution">Images de la Révolution française / Images of the French Revolution</a></h2>
-<p><img alt="" src="images/ifr.jpg" style="width: 130px; height: 130px; float: left; padding-right:10px; clear:both;" />The <a href="https://exhibits.stanford.edu/frenchrevolution"><em>5,126 images</em></a> selected from the BnF collections for this digital archive concentrate solely on the period from 1787 through 1799, from the years immediately preceding the outbreak of the Revolution through the emergence of Napoleon. Only visual materials directly tied to the Revolution itself are included. The creators of the initial incarnation of the Images anticipated that scholars would use them for their research and teaching purposes, and that the public at large would find in them an important way of learning more about this foundational moment for the French nation. Detailed metadata exists for the images, so that researchers can search by artist, subject, genre, and place. Users can also browse and search within different themes.</p>
-<br />
-<h2 class="lead"><a href="french-revolutionary-data-project">French Revolutionary Data</a></h2>
-<p><img alt="" src="images/db_schema.png" style="width: 130px; height: 130px; float: left; padding-right:10px; clear:both;" />The data available on this site is the product of data cleaning performed by ARTFL (The Project for American and French Research on the Treasury of the French Language) at the University of Chicago. As a result, these XML files contain fewer OCR errors and more consistent markup than the materials currently searchable through the FRDA interface. Work is currently underway to disambiguate names with the XML corpus, linking each name to an individual. Many of these individuals (the parliamentarian deputies) are associated with biographical metadata in a database developed by the Service de la Bibliothèque et des Archives de l’Assemblée nationale. </p>
-    
-    </article>
-    </main>
-    
-    
+    <body>
+      <header>
+        <div>
+          <img src="librarybnf.png" alt="Stanford Library & BNF logos" />
+          <span>French Revolution Digital Archive</span>
+        </div>
+      </header>
 
-  </body>
+      <main>
+        <article>
+          <h2 class="lead">
+            <a href="http://sul-philologic.stanford.edu/philologic/archparl/"
+              >Archives parlementaires / Parliamentary archives</a
+            >
+          </h2>
+          <p>
+            <img
+              alt=""
+              src="images/ap.jpg"
+              style="
+                width: 130px;
+                height: 130px;
+                float: left;
+                padding-right: 10px;
+                clear: both;
+              "
+            />The
+            <a href="http://sul-philologic.stanford.edu/philologic/archparl/"
+              ><em>Archives parlementaires</em></a
+            >
+            is a chronologically-ordered edited collection of sources on the
+            French Revolution. It was conceived in the mid 19th century as a
+            project to produce a definitive record of parliamentary
+            deliberations and also includes letters, reports, speeches, and
+            other first-hand accounts from a great variety of published and
+            archival sources. FRDA currently contains the AP volumes covering
+            the years 1787-1794, which can be searched using ARTFL's PhiloLogic
+            4 open source software platform. The texts have been marked up using
+            TEI so that speakers, places, dates, and terms in the published
+            index can be easily found. Users can see both scanned images of the
+            AP pages or just the texts.
+          </p>
+          <br />
+          <h2>
+            <a href="https://exhibits.stanford.edu/frenchrevolution"
+              >Images de la Révolution française / Images of the French
+              Revolution</a
+            >
+          </h2>
+          <p>
+            <img
+              alt=""
+              src="images/ifr.jpg"
+              style="
+                width: 130px;
+                height: 130px;
+                float: left;
+                padding-right: 10px;
+                clear: both;
+              "
+            />The
+            <a href="https://exhibits.stanford.edu/frenchrevolution"
+              ><em>5,126 images</em></a
+            >
+            selected from the BnF collections for this digital archive
+            concentrate solely on the period from 1787 through 1799, from the
+            years immediately preceding the outbreak of the Revolution through
+            the emergence of Napoleon. Only visual materials directly tied to
+            the Revolution itself are included. The creators of the initial
+            incarnation of the Images anticipated that scholars would use them
+            for their research and teaching purposes, and that the public at
+            large would find in them an important way of learning more about
+            this foundational moment for the French nation. Detailed metadata
+            exists for the images, so that researchers can search by artist,
+            subject, genre, and place. Users can also browse and search within
+            different themes.
+          </p>
+          <br />
+          <h2 class="lead">
+            <a href="french-revolutionary-data-project"
+              >French Revolutionary Data</a
+            >
+          </h2>
+          <p>
+            <img
+              alt=""
+              src="images/db_schema.png"
+              style="
+                width: 130px;
+                height: 130px;
+                float: left;
+                padding-right: 10px;
+                clear: both;
+              "
+            />The data available on this site is the product of data cleaning
+            performed by ARTFL (The Project for American and French Research on
+            the Treasury of the French Language) at the University of Chicago.
+            As a result, these XML files contain fewer OCR errors and more
+            consistent markup than the materials currently searchable through
+            the FRDA interface. Work is currently underway to disambiguate names
+            with the XML corpus, linking each name to an individual. Many of
+            these individuals (the parliamentarian deputies) are associated with
+            biographical metadata in a database developed by the Service de la
+            Bibliothèque et des Archives de l’Assemblée nationale.
+          </p>
+        </article>
+      </main>
 
+      <footer>
+        <p>
+          <a href="https://www.stanford.edu/site/accessibility/"
+            >Accessibility</a
+          >
+        </p>
+      </footer>
+    </body>
+  </html>
 </html>
